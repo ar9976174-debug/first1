@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paragliding Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e') 
+            no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+               /* nav start */
+               .navbar {
+            background: linear-gradient(45deg, #0d6efd, #6610f2);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+            color: #fff !important;
+        }
+
+        .nav-link {
+            /* color: #fff !important; */
+            color: #fff !important;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
+        .dropdown-menu {
+            border-radius: 10px;
+        }
+
+        .btn-search {
+            background-color: #ffc107;
+            border: none;
+            color: black;
+        }
+
+        .btn-search:hover {
+            background-color: #ffca2c;
+        }
+        /* nav end */
+
+        /* Glass Effect */
+        .contact-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 40px;
+            color: #fff;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-control, .form-select {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: #fff;
+        }
+
+        .form-control::placeholder {
+            color: #eee;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+            color: #fff;
+        }
+
+        .btn-custom {
+            background: #00c6ff;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 30px;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: #0072ff;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="contact-box">
+                
+
+                <h2 class="text-center mb-4">Paragliding Contact Form</h2>
+
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Select Package</label>
+                        <select class="form-select">
+                            <option selected disabled>Choose Package</option>
+                            <option>Basic Flight</option>
+                            <option>Adventure Ride</option>
+                            <option>Premium Sky Experience</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
